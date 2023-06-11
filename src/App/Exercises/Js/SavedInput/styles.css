@@ -1,0 +1,20 @@
+.form .button {
+  margin: 10px;
+  font-family: Poppins;
+  padding: 10px 20px;
+  background-color: #fe3756;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.form .button:hover {
+  background-color: #106a9a;
+  cursor: pointer;
+}
+
+.form .button-active {
+  background-color: #16a53a;
+}
