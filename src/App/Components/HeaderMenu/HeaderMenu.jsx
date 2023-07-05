@@ -1,8 +1,16 @@
 import './styles.css';
 import { SettingIcon } from '../Icons/SettingIcon';
 import { MenuArrow } from '../Icons/MenuArrow';
+import { useState } from 'react';
 
 export function HeaderMenu() { 
+  
+  const [isArrowClicked, setArrowClicked] = useState(false);
+
+  function clickArrowInHeaderMenu() {
+    setArrowClicked(!isArrowClicked);
+  }
+  
   return ( 
     <div className="images-container"> 
       <SettingIcon /> 
@@ -16,7 +24,21 @@ export function HeaderMenu() {
         <h5>kursant</h5>
       </div>
 
-      <MenuArrow className='menu-arrow' />
+{/* ToDo: zamienić PopUp menu na komponent, do tego komponentu zaimportować strzałkę <MenuArrow> */}
+      <button onClick={clickArrowInHeaderMenu} className='header-button-arrow'>
+        <MenuArrow className='menu-arrow' />
+      </button>
+      {isArrowClicked && (
+        <div className='header-hiding-div'>
+          <button className='header-button-log-in'>Zaloguj się</button>
+          <p className='header-question'>
+            Nie masz konta?{' '}
+            <span className='header-button-register'>Zarejestruj się</span>
+          </p>
+        </div>
+      )}
+
+      
     </div> 
   );
 }
