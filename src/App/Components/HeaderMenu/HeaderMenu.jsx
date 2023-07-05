@@ -24,6 +24,7 @@ export function HeaderMenu() {
         <h5>kursant</h5>
       </div>
 
+{/* ToDo: zamienić PopUp menu na komponent, do tego komponentu zaimportować strzałkę <MenuArrow> */}
       <button onClick={clickArrowInHeaderMenu} className='header-button-arrow'>
         <MenuArrow className='menu-arrow' />
       </button>
