@@ -1,4 +1,4 @@
-import { CalendarIcon } from '../Icons/CalendarIcon';
+import { CookieIcon } from '../Icons/CookieIcon';
 import './styles.css';
 
 export const CookieBanner = () => {
@@ -6,7 +6,7 @@ export const CookieBanner = () => {
     <div className="cookie_wrapper">
       <div className="cookie_content">
         {/* ikona i oplywajacy tekst */}
-        <CalendarIcon className="content_icon" />
+        <CookieIcon className="content_icon" />
         <h4>Pozwól na pliki cookies</h4>
         <p>
           Nasza strona korzysta z ciasteczek, które umożliwiają poprawne
