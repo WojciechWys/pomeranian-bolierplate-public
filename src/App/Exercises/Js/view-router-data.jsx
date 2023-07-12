@@ -16,6 +16,7 @@ import { blockRouterMetaData as blockRouterMetaDataSavedInput } from './SavedInp
 import { blockRouterMetaData as blockRouterMetaDataSavedInputDocelowy } from './SavedInputDocelowy/router-data';
 import { blockRouterMetaData as oopMetaData } from './Exercise-oop/router-data';
 import { blockRouterMetaData as TryOrCatchMetaData } from './try-or-catch/router-data';
+import { blockRouterMetaData as PromisesInJS } from './Exercise-js-promises/router-data';
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
   blockRouterMetaDataJsVariables2,
@@ -33,5 +34,6 @@ export const blockRouterMetaData = [
   blockRouterMetaDataSavedInputDocelowy,
   oopMetaData,
   TryOrCatchMetaData,
+  PromisesInJS,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
