@@ -34,8 +34,18 @@ export function JsPromisesExercise({ parameterToEffect }) {
   }
 
   const myPromise = new Promise((resolve, rejected) => {
+    setTimeout(() => {
+      const random = Math.random();
 
+      if(random < 0.5) {
+        resolve();
+      } else {
+        rejected();
+      }
+    }, 5000)
   });
+
+  logPromiseState(myPromise);
 
   return <div className="playing-with-js-promises"></div>;
 }
